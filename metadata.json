@@ -1,0 +1,6 @@
+{
+  "name": "TradingView Markets",
+  "description": "Global financial markets hub featuring interactive index charts, stock heatmaps, crypto, futures, forex, yield curves, and market calendars.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

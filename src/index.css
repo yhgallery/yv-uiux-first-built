@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --tv-bg: #ffffff;
+    --tv-surface: #f8f9fd;
+    --tv-surface-hover: #f0f3fa;
+    --tv-border: #e0e3eb;
+    --tv-text: #131722;
+    --tv-text-secondary: #6a6d78;
+    --tv-accent: #2962ff;
+    --tv-up: #089981;
+    --tv-down: #f23645;
+  }
+
+  .dark {
+    --tv-bg: #131722;
+    --tv-surface: #1e222d;
+    --tv-surface-hover: #2a2e39;
+    --tv-border: #2a2e39;
+    --tv-text: #d1d4dc;
+    --tv-text-secondary: #868993;
+    --tv-accent: #2962ff;
+    --tv-up: #089981;
+    --tv-down: #f23645;
+  }
+
+  html {
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  .font-mono-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom subtle scrollbars for horizontal carousels */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
